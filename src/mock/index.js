@@ -1,0 +1,1 @@
+export {entitiesMock} from './entitiesStaticMock';

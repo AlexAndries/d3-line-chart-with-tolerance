@@ -1,0 +1,36 @@
+.line-chart {
+  height: 600px;
+
+  .x.axis path {
+    visibility: hidden;
+  }
+
+  .feature-axis {
+    path {
+      opacity: 0.8;
+      stroke-dasharray: 2.2;
+      stroke: grey;
+    }
+  }
+
+  .paths path {
+    fill: none;
+    stroke-width: 3;
+    stroke-opacity: 0.7;
+    transition: stroke-opacity 0.3s;
+    will-change: stroke-opacity;
+
+    &.highlighted {
+      animation: highlightedPath 20s linear infinite;
+      stroke-dasharray: 5;
+      stroke-opacity: 1;
+    }
+  }
+}
+
+
+@keyframes highlightedPath {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}

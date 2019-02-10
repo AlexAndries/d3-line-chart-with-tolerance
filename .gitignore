@@ -1,0 +1,12 @@
+# IDE
+.idea
+
+# Dependency directories
+node_modules
+package-lock.json
+
+# Build
+dist
+
+# Coverage directory used by tools like istanbul
+coverage

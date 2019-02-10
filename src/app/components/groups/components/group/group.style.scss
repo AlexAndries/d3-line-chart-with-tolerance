@@ -1,0 +1,29 @@
+.group {
+  padding: 15px;
+  background: #043039;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  &--selected {
+    background: #046977;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__sub-title {
+    font-size: 12px;
+  }
+
+  &__items {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}

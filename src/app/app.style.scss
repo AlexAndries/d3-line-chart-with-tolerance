@@ -1,0 +1,20 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  background: #030011;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+
+  &__chart {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__groups {
+    width: 20%;
+    padding: 10px
+  }
+}
